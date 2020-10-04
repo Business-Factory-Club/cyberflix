@@ -12,12 +12,12 @@ class MockDiscoverRepository : DiscoverRepository {
 
         for (i in 0..2) {
             val result = Results(
-                MockResults.id,
-                MockResults.voteAverage,
-                MockResults.title,
-                MockResults.releaseDate,
-                MockResults.overview,
-                MockResults.posterPath
+                MockResults.id + i,
+                MockResults.voteAverage + i,
+                MockResults.title + i,
+                MockResults.releaseDate + i,
+                MockResults.overview + i,
+                MockResults.posterPath + i
             )
             resultList.add(result)
         }
