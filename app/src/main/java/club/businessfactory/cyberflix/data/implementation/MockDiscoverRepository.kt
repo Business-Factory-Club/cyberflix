@@ -17,7 +17,8 @@ class MockDiscoverRepository : DiscoverRepository {
                 MockResults.title + i,
                 MockResults.releaseDate + i,
                 MockResults.overview + i,
-                MockResults.posterPath + i
+                MockResults.posterPath + i,
+                MockResults.genres
             )
             resultList.add(result)
         }

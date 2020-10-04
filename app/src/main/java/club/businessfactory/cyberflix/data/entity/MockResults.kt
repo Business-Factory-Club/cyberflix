@@ -7,4 +7,5 @@ object MockResults {
     val releaseDate: String = "23/07/1988"
     val overview: String = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     val posterPath: String = "AahuyhHbhabgaAUHk4525AK"
+    val genres = arrayOf(1, 2)
 }

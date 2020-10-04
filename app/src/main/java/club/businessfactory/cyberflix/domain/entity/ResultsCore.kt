@@ -6,5 +6,6 @@ data class ResultsCore (
     val title: String,
     val releaseDate: String,
     val overview: String,
-    val posterPath: String
+    val posterPath: String,
+    val genres: Array<Int>
 )

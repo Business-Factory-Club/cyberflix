@@ -10,14 +10,15 @@ class ResultsMapper {
             val results = resultsResponse.results
             val resultsList: MutableList<ResultsCore> = mutableListOf()
 
-            results.forEach { results ->
+            results.forEach { result ->
                 val resultsCore = ResultsCore(
-                    id = results.id,
-                    voteAverage = results.voteAverage,
-                    title = results.title,
-                    releaseDate = results.releaseDate,
-                    overview = results.overview,
-                    posterPath = results.posterPath
+                    id = result.id,
+                    voteAverage = result.voteAverage,
+                    title = result.title,
+                    releaseDate = result.releaseDate,
+                    overview = result.overview,
+                    posterPath = result.posterPath,
+                    genres = result.genres
                 )
                 resultsList.add(resultsCore)
             }

@@ -2,6 +2,7 @@ package club.businessfactory.cyberflix.presentation.feature.home.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import club.businessfactory.cyberflix.domain.entity.CategoryMoviesCore
 import club.businessfactory.cyberflix.domain.entity.ResultsCore
 import club.businessfactory.cyberflix.domain.gateway.usecase.HomeUseCaseGateway
 import kotlinx.coroutines.CoroutineScope
@@ -12,7 +13,7 @@ import org.koin.core.inject
 
 class HomeViewModel : ViewModel(), KoinComponent{
     private val homeUseCase: HomeUseCaseGateway by inject()
-    val resultsLiveData: MutableLiveData<List<ResultsCore>> = MutableLiveData()
+    val resultsLiveData: MutableLiveData<List<CategoryMoviesCore>> = MutableLiveData()
 
     fun getResults(){
         CoroutineScope(Dispatchers.Main).launch {
