@@ -6,13 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import club.businessfactory.cyberflix.R
-import club.businessfactory.cyberflix.domain.entity.CategoryMoviesCore
 import club.businessfactory.cyberflix.domain.entity.ResultsCore
-import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.home_list_item.view.*
 import kotlinx.android.synthetic.main.movie_category_list_item.view.*
-import java.lang.Exception
 
 class MovieListAdapter(private val movies: List<ResultsCore>, private val context: Context) :
     RecyclerView.Adapter<MovieListAdapter.MovieViewHolder>() {

@@ -11,7 +11,7 @@ import org.koin.android.ext.android.inject
 
 class HomeActivity : AppCompatActivity() {
 
-    val viewModel: HomeViewModel by inject()
+    private val viewModel: HomeViewModel by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
         returnTesting()
     }
 
-    fun returnTesting(){
+    private fun returnTesting(){
         viewModel.getResults()
 
         viewModel.resultsLiveData.observe(this, Observer { resultsList ->

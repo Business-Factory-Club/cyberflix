@@ -1,7 +1,6 @@
 package club.businessfactory.cyberflix.domain.usecase
 
 import club.businessfactory.cyberflix.domain.entity.CategoryMoviesCore
-import club.businessfactory.cyberflix.domain.entity.ResultsCore
 import club.businessfactory.cyberflix.domain.gateway.dataprovider.HomeDataProviderGateway
 import club.businessfactory.cyberflix.domain.gateway.usecase.HomeUseCaseGateway
 import club.businessfactory.cyberflix.domain.usecase.mapper.HomeUseCaseMapper
