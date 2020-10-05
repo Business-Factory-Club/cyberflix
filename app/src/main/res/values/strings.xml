@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Cyberflix</string>
+
+    <!-- content description -->
+
+    <string name="poster_path_description">Movie poster</string>
+
+
 </resources>
